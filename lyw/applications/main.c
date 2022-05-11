@@ -91,7 +91,7 @@ int thread_sample(void)
                    RT_NULL,
                    &thread2_stack[0],
                    sizeof(thread2_stack),
-                   THREAD_PRIORITY - 1, THREAD_TIMESLICE);
+                   THREAD_PRIORITY, THREAD_TIMESLICE-1);
     rt_thread_startup(&thread2);
 
     return 0;
