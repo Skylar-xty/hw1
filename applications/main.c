@@ -51,4 +51,4 @@ int led(void)
     }
     return 0;
 }
-//MSH_CMD_EXPORT(led, RT-Thread first led sample);
+MSH_CMD_EXPORT(led, RT-Thread first led sample);
