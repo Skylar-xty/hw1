@@ -19,7 +19,7 @@
 
 #define THREAD_STACK_SIZE	1024
 #define THREAD_PRIORITY	    20
-#define THREAD_TIMESLICE    10
+#define THREAD_TIMESLICE    6
 
 /* 线程入口 */
 static void thread_entry(void* parameter)
