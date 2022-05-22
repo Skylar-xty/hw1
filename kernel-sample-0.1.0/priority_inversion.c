@@ -26,6 +26,7 @@ static rt_thread_t tid1 = RT_NULL;
 static rt_thread_t tid2 = RT_NULL;
 static rt_thread_t tid3 = RT_NULL;
 static rt_mutex_t mutex = RT_NULL;
+int i=0;
 
 
 #define THREAD_PRIORITY       10
@@ -97,7 +98,10 @@ static void thread3_entry(void *parameter)
 
     /* 做一个长时间的循环，500ms */
     tick = rt_tick_get();
-    while (rt_tick_get() - tick < (RT_TICK_PER_SECOND / 2)) ;
+    while (rt_tick_get() - tick < (RT_TICK_PER_SECOND / 2)) {
+			i++;
+			rt_kprintf("%d",i);
+		}
 
     rt_mutex_release(mutex);
 }

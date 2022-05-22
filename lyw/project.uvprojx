@@ -932,6 +932,16 @@
               <FileType>1</FileType>
               <FilePath>.\kernel-sample-0.1.0\timeslice_sample.c</FilePath>
             </File>
+            <File>
+              <FileName>my_work.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\kernel-sample-0.1.0\my_work.c</FilePath>
+            </File>
+            <File>
+              <FileName>my_work2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\kernel-sample-0.1.0\my_work2.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
